@@ -1,13 +1,15 @@
 next-version: 1.0.0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatch
-mode: ContinuousDelivery
+mode: MainlineDevelopment
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
 patch-version-bump-message: '\+semver:\s?(fix|patch)'
 commit-date-format: 'dd-MM-yyyy'
 commit-message-incrementing: Enabled
-branches: {}
+branches: 
+  feature:
+    tag: feature-{BranchName}
 ignore:
   sha: []
 merge-message-formats: {}
